@@ -76,6 +76,8 @@ document.getElementById("promo-submit").addEventListener("click", function(e) {
         failedMessage.classList.remove("d-none")
         successMessage.classList.add("d-none")
     }
+
+    document.getElementById("promo-input").value = ""
 })
 
 
