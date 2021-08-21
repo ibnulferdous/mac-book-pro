@@ -15,7 +15,7 @@ function updatePrimaryTotal() {
     // Updating the total variable
     costsArray.forEach(element => total += element)
 
-    // assigning innertext for primary-total 
+    // primary-total update in html 
     document.getElementById("primary-total").innerText = total
 
     if(discount == 5) {
@@ -24,10 +24,11 @@ function updatePrimaryTotal() {
         finalTotal = total
     }
 
+    // final-price update in html
     document.getElementById("final-price").innerText = finalTotal
 }
 
-// Function for button events
+// Function for config button events
 function buttonEvents(btnId, removeClassIdArray, textId, cost) {
     document.getElementById(btnId).addEventListener("click", function(e) {
         // Add or remove class on click
@@ -38,12 +39,9 @@ function buttonEvents(btnId, removeClassIdArray, textId, cost) {
             for(id of removeClassIdArray) {
                 document.getElementById(id).classList.remove("active")
             }
-        } else {
-            e.target.classList.remove("active")
-        }
+        } 
     
         document.getElementById(textId).innerText = cost
-
         updatePrimaryTotal()
     })
 }
@@ -78,8 +76,6 @@ document.getElementById("promo-submit").addEventListener("click", function(e) {
         failedMessage.classList.remove("d-none")
         successMessage.classList.add("d-none")
     }
-
-
 })
 
 
