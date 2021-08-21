@@ -1,0 +1,9 @@
+.mac-img {
+    width: 85%;
+}
+
+.active {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}

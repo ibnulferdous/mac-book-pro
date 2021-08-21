@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac Book Pro- Buy Now!</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header class="my-5">
+        <main class="container pt-3">
+            <div class="row">
+                <!-- iMac Image div -->
+                <div class="col-lg">
+                    <img src="images/mac.jpg" alt="Mac Book" class="mac-img">
+                </div>
+                <div class="col-lg">
+                    <h1 class="h2 mb-2">Customize your Blue 24-inch iMac with Apple M1 chip</h1>
+                    <p class="mb-4">Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 8-core GPU, and 16-core Neural Engine. Get credit toward a new Mac when you trade in your eligible computer. Or recycle it for free.</p>
+
+                    <!-- Ram config buttons -->
+                    <h6 class="mb-2 fw-bolder">Memory</h6>
+                    <a id="8gb-ram" class="btn btn-outline-primary m-1 btn-sm active">8GB unified memory</a>
+                    <a id="16gb-ram" class="btn btn-outline-primary m-1 btn-sm">16GB unified memory</a>
+
+                    <div class="w-100 my-4"></div>
+
+                    <!-- SSD config buttons -->
+                    <h6 class="mb-2 fw-bolder">Storage</h6>
+                    <a id="256gb-ssd" class="btn btn-outline-primary m-1 btn-sm active">256GB SSD</a>
+                    <a id="512gb-ssd" class="btn btn-outline-primary m-1 btn-sm">512GB SSD</a>
+                    <a id="1000gb-ssd" class="btn btn-outline-primary m-1 btn-sm">1TB SSD</a>
+
+                    <div class="w-100 my-4"></div>
+
+                    <!-- Shipping config buttons -->
+                    <h6 class="mb-2 fw-bolder">Choose Delivery Option</h6>
+                    <a id="normal-shipping" class="btn btn-outline-primary m-1 btn-sm active">Friday, Aug 25 FREE Prime Delivery</a>
+                    <a id="fast-shipping" class="btn btn-outline-primary m-1 btn-sm">Friday, Aug 21 Delivery Charge $20</a>
+
+                    <div class="w-100 my-4"></div>
+
+                    <!-- Showing primary total -->
+                    <div class="show-pricing-div me-lg-5 table-responsive mb-4">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Best Price</th>
+                                    <td>$<span id="base-cost">1299</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Extra Memory Cost</th>
+                                    <td>$<span id="ram-cost">0</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Extra Storage Cost</th>
+                                    <td>$<span id="ssd-cost">0</span></td>
+                                </tr>
+                                <tr class="border-dark">
+                                    <th scope="row">Delivery Charge</th>
+                                    <td>$<span id="shipping-cost">0</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Total Price</th>
+                                    <td>$<span id="primary-total">1299</span></td>
+                                </tr>
+                            </tbody>
+                          </table>
+                    </div>
+
+                    <!-- Apply Promo Code -->
+                    <div class="promo-div me-lg-5 mb-3">
+                        <div class="input-group mb-2">
+                            <input id="promo-input" type="text" class="form-control" placeholder="Add Promo Code">
+                            <button id="promo-submit" class="btn btn-danger px-5" type="button">Apply</button>
+                        </div>
+                        <p id="success-message" class="text-success d-none">Promo code added successfully!</p>
+                        <p id="failed-message" class="text-danger d-none">Promo code does not match!</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </header>
+
+    <!-- Total After Applying Promo Code -->
+    <section class="total-after-promo">
+        <div class="container text-center border-top pt-4 pb-5">
+            <h3>Total: $<span id="final-price">1299</span></h3>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!-- Custom JS -->
+    <script src="scripts/script.js"></script>
+</body>
+</html>
